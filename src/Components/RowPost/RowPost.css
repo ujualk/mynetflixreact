@@ -1,0 +1,53 @@
+.row{
+    margin-left: 20px;
+    color: #fff;
+}
+.posters{
+    display: flex;
+    padding: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.posters::-webkit-scrollbar{
+    display: none;
+}
+
+.poster{
+    cursor: pointer;
+    max-height: 250px;
+    margin-right: 10px;
+    transition:transform 0.3s ease-in-out;
+}
+.smallposter{
+    cursor: pointer;
+ max-height: 150px;
+ margin-right: 10px;
+ transition:transform 0.3s ease-in-out;
+
+}
+.poster:hover{
+    transform: scale(1.05);
+}
+.smallposter:hover{
+    transform:scale(1.1) ;
+}
+.closeButton{
+    position: absolute;
+    top:5px;
+    right: 5px;
+    width: 20px;
+    height:20px;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: beige;
+}
+.youtube{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;
+    color: #fff;
+    z-index: 1;
+}
